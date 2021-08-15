@@ -40,7 +40,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -76,8 +76,8 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + "gün " + hours + "saat " +
-                minutes + "dakika " + seconds + "saniye ";
+            document.getElementById("demo").innerHTML = days + " gün " + hours + " saat " +
+                minutes + " dakika " + seconds + " saniye ";
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -90,6 +90,7 @@
     <style>
         html,
         body {
+            min-height: 500px;
             width: 100%;
             height: 100%;
             padding: 0;
@@ -100,7 +101,7 @@
             text-align: center;
             background: url(./turkiye.jpg);
             background-size: cover;
-            font-family: 'Baloo Thambi 2', cursive;
+            font-family: 'Roboto Slab', cursive;
             font-weight: 100;
             letter-spacing: 2px;
             color: white;
@@ -121,14 +122,23 @@
         .box {
             border: 1px solid #fff7;
             padding: 10px;
+            width: 75%;
+            height: 75%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            font-size: xx-large;
         }
 
         h1 {
-            letter-spacing: 10px;
+            letter-spacing: 2px;
+            font-size: 125%;
         }
 
         h2 {
             color: #fff9 !important;
+            font-size: 100%;
         }
     </style>
 
