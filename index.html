@@ -1,0 +1,147 @@
+<html lang="tr">
+
+<head>
+    <title>Seçim 2023 | CB Seçimine ne kadar kaldı?</title>
+
+
+    <!-- meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="description" content="CB Seçimine ne kadar kaldı?" />
+
+    <meta name="keywords" content="berkantkz, berkant, seçim, 2023, cb, cumhurbaşkanı, başkanlık" />
+    <meta name="author" content="berkantkz">
+
+    <!--- og -->
+    <meta property="og:title" content="Seçim 2023" />
+
+    <meta property="og:description" name="description" content="CB Seçimine ne kadar kaldı?" />
+
+    <meta property="og:url" content="https://secim2023.github.io/" />
+    <meta property="og:image" content="https://berkantkz.github.io/kz.png" />
+
+    <!-- link -->
+    <link rel="icon" href="https://berkantkz.github.io/kz.png" type="image/gif" sizes="16x16 32x32" />
+    <link rel="shortcut icon" href="https://berkantkz.github.io/kz.png" type="image/x-icon" />
+
+    <!--
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet" href="/css/ionicons.min.css">
+<link rel="stylesheet" href="/css/pace.css">
+<link rel="stylesheet" href="/css/custom.css">
+
+
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/pace.min.js"></script>
+<script src="/js/modernizr.custom.js"></script> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117578942-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117578942-3');
+    </script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jun 18, 2023 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("demo").innerHTML = days + "gün " + hours + "saat " +
+                minutes + "dakika " + seconds + "saniye ";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background: url(./turkiye.jpg);
+            background-size: cover;
+            font-family: 'Baloo Thambi 2', cursive;
+            font-weight: 100;
+            letter-spacing: 2px;
+            color: white;
+            text-transform: capitalize;
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+            background: #0009;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+        }
+
+        .box {
+            border: 1px solid #fff7;
+            padding: 10px;
+        }
+
+        h1 {
+            letter-spacing: 10px;
+        }
+
+        h2 {
+            color: #fff9 !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <h2>2023 cumhurbaşkanlığı seçimine</h2>
+            <h1 id="demo"></h1>
+            <h2>KALDI</h2>
+        </div>
+    </div>
+    <div style="background: #0009; width: 100%; text-transform: lowercase;">
+        <em>berkantkz</em>
+    </div>
+</body>
