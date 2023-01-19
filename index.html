@@ -45,7 +45,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jun 18, 2023 09:00:00").getTime();
+        var countDownDate = new Date("May 14, 2023 09:00:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
@@ -63,8 +63,9 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("demo").innerHTML = days + " gün " + hours + " saat " +
-                minutes + " dakika " + seconds + " saniye ";
+            document.getElementById("demo").innerHTML = days + " gün<br>" + hours + " saat<br>" +
+                minutes + " dakika<br>" + seconds + " saniye";
+            document.getElementById("demo").style.opacity = "1";
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -104,10 +105,11 @@
             flex-wrap: nowrap;
             align-content: center;
             justify-content: center;
+            transition: all ease-in .5s;
         }
 
         .box {
-            border: 1px solid #fff7;
+            border: 1px solid #fff5;
             padding: 10px;
             width: 75%;
             height: 75%;
@@ -117,16 +119,36 @@
             flex-direction: column;
             font-size: xx-large;
             padding: 25px;
+            transition: all ease-in .5s;
+            font-size: 175%;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .side {
+            font-size: 75%;
+            opacity: .7;
         }
 
         h1 {
             letter-spacing: 2px;
-            font-size: 125%;
+            transition: all ease-in .5s;
+        }
+
+        #demo {
+            transition: all ease-in .5s;
+            opacity: 0;
         }
 
         h2 {
-            color: #fff9 !important;
-            font-size: 100%;
+            color: #fff !important;
+            transition: all ease-in .5s;
         }
     </style>
 
@@ -135,9 +157,16 @@
 <body>
     <div class="main">
         <div class="box">
-            <h2>2023 cumhurbaşkanlığı seçimine</h2>
-            <h1 id="demo"></h1>
-            <h2>KALDI</h2>
+            <div class="content">
+                <h2>2023 cumhurbaşkanlığı seçimine</h2>
+                <h1 id="demo">m<br>e<br>
+                    <3<br>b
+                </h1>
+                <h2>KALDI</h2>
+            </div>
+            <div class="side">
+                <h5 class="slogan"><em>Türkiyemiz kazansın.</em></h5>
+            </div>
         </div>
     </div>
     <div style="background: #0009; width: 100%; text-transform: lowercase; padding: 10px 0;">
